@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\vivek\AppData\Local\Temp\testng-eclipse--1034878155\testng-customsuite.xml</span>
+                    <span>C:\Users\vivek\AppData\Local\Temp\testng-eclipse-1090184446\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,10 +129,21 @@
                   <a name="tc2">
                   </a> <!-- tc2 -->
                   <span class="method-name">tc2</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
-	The method scrollbar(WebDriver, int, int) in the type WebDriverUtilities is not applicable for the arguments (WebDriver, WebElement, void)
-
-	at Scripts.TestCase2.tc2(TestCase2.java:24)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=addresstype
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I7S92S5&apos;, ip: &apos;192.168.1.45&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at GENERIC_LIBRARY.WebDriverUtilities.dropDown(WebDriverUtilities.java:14)
+	at Scripts.TestCase2.tc2(TestCase2.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +181,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vivek\AppData\Local\Temp\testng-eclipse--1034878155\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vivek\AppData\Local\Temp\testng-eclipse-1090184446\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,12 +234,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc2')
 data.setCell(0, 2, 'Scripts.TestCase2')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 344);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 ms</span>
+              <span class="suite-total-time">Total running time: 344 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -263,11 +274,13 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tc2</span>
-                <span class="method-start">4236 ms</span>
+                <span class="method-start">3631 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeApp([TestResult name=tc2 status=FAILURE method=TestCase2.tc2()[pri:0, instance:Scripts.TestCase2@4550bb5...)</span>
-                <span class="method-start">4250 ms</span>
+                <span class="method-start">3987 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
